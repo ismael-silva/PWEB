@@ -1,0 +1,66 @@
+/* Estilo padrão para o DIV */
+.color-div {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+}
+
+/* Estilos para diferentes tamanhos de tela usando media queries */
+@media (max-width: 420px) {
+    .color-div {
+        background-color: gray;
+    }
+    .color-div h1::before {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .color-div {
+        background-color:orange;
+    }
+    .color-div h1::before {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .color-div {
+        background-color: pink;
+    }
+    .color-div h1::before {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .color-div {
+        background-color:red;
+    }
+    .color-div h1::before {
+        content: "Vermelho";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .color-div {
+        background-color:blue;
+    }
+    .color-div h1::before {
+        content: "azul";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .color-div {
+        background-color:yellow;
+    }
+    .color-div h1::before {
+        content: "Amarelo";
+    }
+}
