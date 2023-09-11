@@ -56,7 +56,8 @@
     }
 }
 
-@media (min-width: 1081px) and (max-width: 1366px) {
+
+@media (min-width: 1367px) and (max-width: 1920px) {
     .color-div {
         background-color:yellow;
     }
