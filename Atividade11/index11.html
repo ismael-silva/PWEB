@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta>
+</head>
+<body>
+    <script>
+        //usando objcet
+       var aluno1 = new Object();
+       aluno1.ra = "003482211030";
+       aluno1.nome = "Ismael";
+       alert("Ra=" + aluno1.ra + " Nome=" + aluno1.nome);
+
+        //usando {}
+       var aluno2 = {};
+       aluno2.ra = "003482211030";
+       aluno2["nome"] = "Ismael barbosa";
+       alert("Ra=" + aluno2.ra + " Nome=" + aluno2.nome);
+
+        //literal
+       var aluno3 = {
+        ra: "003482211030",
+       nome: "Ismael Barbosa da Silva"
+       };
+       alert("Ra=" + aluno3.ra + " Nome=" + aluno3.nome);
+
+       //usando função construtora
+       function Aluno(ra, nome){
+           this.ra = ra;
+           this.nome = nome;
+
+           this.MostraDados = function (){
+               return "ra=" + this.ra + " nome=" + this.nome;
+           }
+         
+       }
+       var aluno4 = new Aluno("0030482211030", "Ismael");
+        alert(aluno4.MostraDados());
+        alert(aluno4.nome);
+       
+
+       var aluno5 = {};
+       var nome_propriedade = "ra";
+       aluno5[nome_propriedade] = "123";
+       aluno5['nome'] = "vitor";
+       alert(aluno5.ra + " " + aluno5.nome);
+
+       
+
+    </script>
+
+
+</body>
+</html>
