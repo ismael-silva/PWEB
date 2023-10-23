@@ -1,0 +1,13 @@
+#janela {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    background-image: url('img/janelafechada.jpg');
+    background-size: cover;
+    cursor: pointer;
+  }
+  h1{
+    text-align: center;
+  }
+  
